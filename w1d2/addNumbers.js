@@ -38,10 +38,10 @@ console.log('Sum Results:' + sum);
 
 //Take in Arguments from the Command line
 //const commands = process.argv; //array
+//addNumbers(commands);
 
-addNumbers([1, 2, 3, 4, 5]);
-addNumbers([1, 2, 3, 4, 5]);
-addNumbers([1, 2, 3, 4, 5]);
+
+//Careful as the method starts adding on index 2
 addNumbers([1, 2, 3, 4, 5]);
 
 
