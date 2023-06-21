@@ -2,13 +2,18 @@
 
 Topics to Cover:
 
-[] Functions as Values
-[] Functions as Callbacks
-[] Anonymous Functions
-[] Function Calling vs Passing (reference to a function)
-[] Higher Order Functions
-[] Arrow Functions (Intro + Common use for callbacks)
-[] Nested SCope and Scope Chain
+* [] Questions from last lecture
+
+
+
+
+* [] Functions as Values
+* [] Functions as Callbacks
+* [] Anonymous Functions
+* [] Function Calling vs Passing (reference to a function)
+* [] Higher Order Functions
+* [] Arrow Functions (Intro + Common use for callbacks)
+* [] Nested SCope and Scope Chain
 
 
 
