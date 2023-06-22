@@ -3,10 +3,6 @@
 Topics to Cover:
 
 * [] Questions from last lecture
-
-
-
-
 * [] Functions as Values
 * [] Functions as Callbacks
 * [] Anonymous Functions
