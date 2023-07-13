@@ -25,7 +25,7 @@ fs.promises.readFile('message.txt','utf-8')
 .then((data)=>{
     console.log("writing a file");
     const newData = "Adding new data to data - " + data;
-    return fs.promises.writeFile('./copy.txt', newData)
+    return fs.promises.writeFile('./copy.txt','utf-8', newData)
 })
 .then(()=>{
     //write successful
