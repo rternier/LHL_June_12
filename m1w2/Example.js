@@ -28,7 +28,6 @@ const callMeMaybe = (shouldCall,name,callMechanism) =>{
 
 callMeMaybe1(true, 'Taylor Swift');
 callMeMaybe(true, "Taylor Swift", call);
-
 callMech('Bryan Adams');
 
 //So why callbacks? Reusable, maintainable, loosely coupled
