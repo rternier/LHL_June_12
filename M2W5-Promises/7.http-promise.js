@@ -1,22 +1,24 @@
-const rp = require('request-promise');
+const { Console } = require('console');
+const rp = require('request-promise')
 
-const options ={
+const options = {
     uri:'https://jsonplaceholder.typicode.com/posts',
     json:true
-};
-
+}
+let postCount = 0;
 rp(options)
 .then(posts=>{
-    console.log(posts);
+    //console.log(posts);
+    postCount = posts.length;
+    //console.log(posts.length);
 })
-.catch(errors=>
-{
+.catch(errors=>{
     console.error(`Error: ${errors}`);
 });
-
-console.log('End of File');
-//Additional work
-
-//Post data to server - Changing name from Ryan to James
-//server responds (ok)
-//server then updates name
+//processing.
+console.log('This is the end of my code');
+if(postCount > 10)
+{
+    console.log('greater than 10');
+}
+console.log(postCount);

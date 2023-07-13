@@ -1,6 +1,5 @@
 const request = require('request');
 
-
 const tasks =[
     request('https://jsonplaceholder.typicode.com/posts'),
     request('https://jsonplaceholder.typicode.com/posts'),
