@@ -1,5 +1,6 @@
 # July 20 - 2023 - CRUD and Express JS
 
+run this as: https://localhost:3000
 
 Topics to Cover:
 
