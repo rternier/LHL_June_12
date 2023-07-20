@@ -3,14 +3,14 @@
 
 Topics to Cover:
 
-* [] Implementing CRUD over HTTP with Express
-* [] Render vs Redirect pattern in multi-page apps
-* [] Forms (action, method)
-* [] Links (a tags) compared to Forms
-* [] Exploring the DevTools network tab in Chrome
-* *  [] Explore the full lifecycle of GET -> Submit Form -> POST -> Redirect -> GET
-* *  [] Query string params vs Post Data params (and how they are encoded)
-* [] Debugging tactics
+* [x] Implementing CRUD over HTTP with Express
+* [x] Render vs Redirect pattern in multi-page apps
+* [x] Forms (action, method)
+* [x] Links (a tags) compared to Forms
+* [x] Exploring the DevTools network tab in Chrome
+* *  [x] Explore the full lifecycle of GET -> Submit Form -> POST -> Redirect -> GET
+* *  [x] Query string params vs Post Data params (and how they are encoded)
+* [x] Debugging tactics
 
 
 ## npm Modules
