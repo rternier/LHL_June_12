@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/public/stylesheets/layout.css" as="style" >
+<header>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/books/add">Add Book</a></li>
+        </ul>
+      </div>
+      <div class="authentication">
+        <form action="/login" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Login</button>
+        </form>
+        <a href="/account/create">Create Account</a>
+      </div>
+    </nav>
+  </header>
