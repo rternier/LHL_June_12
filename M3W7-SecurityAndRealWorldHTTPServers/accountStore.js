@@ -1,8 +1,4 @@
-const account = require('./account');
-
-
-
-
+const Account = require('./account');
 
 class accountStore {
   constructor() {
@@ -10,10 +6,10 @@ class accountStore {
   }
 
   // Create an account
-  createAccount(emailAddress, name, password) {
-    const a = new account(emailAddress, name, password, new Date());
-    this.accounts.push(a);
-    return a;
+  createAccount(emailAddress, name, password, salt, dateCreated) {
+    const account = new Account(emailAddress, name, password, salt, dateCreated);
+    this.accounts.push(account);
+    return account;
   }
 
   // Read all accounts
@@ -47,5 +43,5 @@ class accountStore {
   }
 }
 
-const aStore = new accountStore();
-module.exports = aStore;
+const as = new accountStore;
+module.exports = as;

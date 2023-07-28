@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="/public/stylesheets/layout.css" as="style" >
 <header>
     <nav>
@@ -5,17 +6,24 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/books/add">Add Book</a></li>
+          <li><a href="/account">Accounts</a></li>
         </ul>
       </div>
+     
+      
       <div class="authentication">
-        <form action="/login" method="POST">
+        <form action="/account/login" method="POST">
           <label for="username">Username:</label>
           <input type="text" id="username" name="username" required>
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required>
+          <input type="checkbox" id="rememberMe" name="rememberMe">
+          <label for="rememberMe">Remember Me</label>
           <button type="submit">Login</button>
         </form>
         <a href="/account/create">Create Account</a>
       </div>
+   
+ 
     </nav>
   </header>

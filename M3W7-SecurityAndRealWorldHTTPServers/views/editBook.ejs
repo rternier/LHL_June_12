@@ -7,9 +7,9 @@
     <title>LHL Express JS & CRUD</title>
 </head>
 <body>
-   
     <%- include('./partials/header') %>
- <h1>Edit a Book</h1>
+    <h1>Edit a Book</h1>
+
 
     <form action="/books/<%= encodeURIComponent(book.title) %>" method="POST">
         <label for="title">Title:</label>
