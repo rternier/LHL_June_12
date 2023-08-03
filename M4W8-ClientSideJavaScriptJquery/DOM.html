@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            const myButton = document.getElementById("btn");
+            const $jButton = $('#btn');
+            
+            myButton.children[2]
+         
+            $jButton.click((e)=>{
+
+                const $d1 = $("<div id='div1'></div>");                
+                $('#myP').append($d1);
+                const d2 = document.createElement("div");
+                d2.innerHTML = 'This is my d2 html';
+                d2.setAttribute("id", 'div2');
+                $('#div1').append(d2);
+
+                const $d2 = $('#div2');
+                $d2.click((e)=>{
+                   //$d1.remove();
+                   $d2.parent().remove();
+                });
+            })
+            
+
+            const $buttons = $('.button');
+            const $p = $('.main-p');
+
+
+            $('.button').click((e)=>{
+                let rand = Math.floor(Math.random() * 1000);
+                const $newP = $(`<div>This is contents ${rand}</div>`);
+                $p.append($newP)
+            })
+           
+
+
+
+        });
+    </script>
+</head>
+<body>
+
+    <h1 id="myTitle">My Title</h1>
+    <button id="btn" type="button">Button</button>
+    <a id="myA" href="/">My Anchor</a>
+    <p id="myP">
+    </p>
+
+
+    <hr>
+
+    <button class="button" id="btn2">2 Button</button>
+    <button class="button" id="btn3">3 Button</button>
+    <button class="button" id="btn4">4 Button</button>
+    <button class="button" id="btn5">5 Button</button>
+    <input type="checkbox" class="button" />
+    <div id="container">
+        <p class="main-p">
+            Text div/p
+        </p>
+
+    </div>
+
+    
+    <section>
+        <div>
+            <p class="main-p">
+                Text - section/div/p
+            </p>
+        </div>
+    </section>
+
+
+    <hr>
+        <ul class="level-1">
+            <li class="item-i">I</li>
+            <li class="item-ii">II
+            <ul class="level-2">
+                <li class="item-a">A</li>
+                <li class="item-b">B
+                <ul class="level-3">
+                    <li class="item-1">
+                        <div>
+                            <button>test</button>
+                        </div>
+                    </li>
+                    <li class="item-2">2</li>
+                    <li class="item-3">3</li>
+                </ul>
+                </li>
+                <li class="item-c">C</li>
+            </ul>
+            </li>
+            <li class="item-iii">III</li>
+        </ul>
+</body>
+</html>
